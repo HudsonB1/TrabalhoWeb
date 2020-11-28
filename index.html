@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de recém-nascido</title>
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+<body background="img/1.jpg">
+    <div>
+        <h3 class="cadastro">REGISTRO DE RECÉM-NASCIDO</h3>
+    </div>
+    <div class="form">
+        <form name="formCliente">
+            <fieldset>
+                <legend></legend>
+                <div class="form-group">
+                    <label >Nome da mãe:</label> <input class="input-control" type="text" size="10" id="nomemae" />
+                    <label class="right-inline">Nome do Pai:</label> <input class="input-control" type="text" size="10" id="nomepai" />
+                </div>
+                <div class="form-group">
+                    <label >Nome da criança:</label> <input class="input-control" type="text" size="10" id="nome">
+                    <label class="right-inline">Data de nascimento:</label> <input class="input-control" type="text" size="10" id="data" />
+                    <label class="right-inline">Hora do nascimento:</label><input class="input-control" type="text" size="10" id="hora" />
+                    
+                </div>
+                <div class="form-group">
+                    <label >UF:</label>
+                    <select name="select" class="input-control" id="uf" >
+                        <option value="Não definido" selected></option>
+                        <option value="Acre">AC</option>
+                        <option value="Alagoas">AL</option>
+						<option value="Amapá">AP</option>
+						<option value="Amazonas">AM</option>
+						<option value="Bahia">BA</option>
+						<option value="Ceará">CE</option>
+						<option value="Espírito Santo">ES</option>
+						<option value="Goiás">GO</option>
+						<option value="Maranhão">MA</option>
+						<option value="Mato Grosso">MT</option>
+						<option value="Mato Grosso do Sul">MS</option>
+						<option value="Minas Gerais">MG</option>
+						<option value="Pará">PA</option>
+						<option value="Paraíba">PB</option>
+						<option value="Paraná">PR</option>
+						<option value="Pernambuco">PE</option>
+						<option value="Piauí">PI</option>
+						<option value="Rio de Janeiro">RJ</option>
+						<option value="Rio Grande do Norte">RN</option>
+						<option value="Rio Grande do Sul">RS</option>
+						<option value="Rondônia">RO</option>
+						<option value="Roraima">RR</option>
+						<option value="Santa Catarina">SC</option>
+						<option value="São Paulo">SP</option>
+						<option value="Sergipe">SE</option>
+						<option value="Tocantins">TO</option>
+						<option value="Distrito Federal ">DF</option>
+						
+                    </select> 
+                    <label class="right-inline">Cidade:</label><input class="input-control" type="text" size="10" id="cidade" />
+                    <label class="right-inline">Endereço:</label><input class="input-control" type="text" size="10" id="endereco" />
+                    <label class="right-inline">Número:</label><input class="input-control" type="text" size="5" id="numero" />
+                    <label class="right-inline">Bairro:</label><input class="input-control" type="text" size="10" id="bairro" />
+                    
+                </div>
+                <div class="form-button">
+                    <button id="salvar">💾 Salvar</button><button id="cancelar">🚫 Cancelar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <h3 class="relacao">RELAÇÃO DE CRIANÇAS</h3>
+    </div>
+    <div id="listagem"></div>
+    <script src="criancas.js"></script>
+</body>
+</html>
