@@ -12,7 +12,7 @@ class Cliente {
 
 
         this.clientes.push(cliente) //adiciona um novo item no array
-        alert('Cliente salvo com sucesso!')
+        alert('Cadastro salvo com sucesso!')
         localStorage.setItem('tbClientes', JSON.stringify(this.clientes))    
     }
     edita(cliente){
@@ -50,10 +50,8 @@ class Cliente {
              <td>${cliente.numero}</td>  
              <td>${cliente.bairro}</td>
              <td>
-             <button id='apagar' onclick='cliente.apaga(${cliente.codigo})'>
-             🗑️Apagar</button>
-             <button id='editar' onclick='cliente.edita(${JSON.stringify(cliente)})'>
-             ✏️Editar</button>
+             <button id='apagar' onclick='cliente.apaga(${cliente.codigo})'>APAGAR</button>
+             <button id='editar' onclick='cliente.edita(${JSON.stringify(cliente)})'>EDITAR</button>
             </td>               
             </tr>
             `

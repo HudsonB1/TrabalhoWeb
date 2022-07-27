@@ -6,14 +6,13 @@
     <title>Registro de recém-nascido</title>
     <link href="estilo.css" rel="stylesheet" />
 </head>
-<body background="img/1.jpg">
-    <div>
-        <h3 class="cadastro">REGISTRO DE RECÉM-NASCIDO</h3>
+<body>
+    <div class="estrutura">
+        <h3 class="cadastro">Registro de Recém-Nascido</h3>
     </div>
-    <div class="form">
+    <div class="form estrutura">
         <form name="formCliente">
             <fieldset>
-                <legend></legend>
                 <div class="form-group">
                     <label >Nome da mãe:</label> <input class="input-control" type="text" size="10" id="nomemae" />
                     <label class="right-inline">Nome do Pai:</label> <input class="input-control" type="text" size="10" id="nomepai" />
@@ -64,15 +63,15 @@
                     
                 </div>
                 <div class="form-button">
-                    <button id="salvar">💾 Salvar</button><button id="cancelar">🚫 Cancelar</button>
+                    <button id="salvar">SALVAR</button><button id="cancelar">CANCELAR</button>
                 </div>
             </fieldset>
         </form>
     </div>
-    <div>
+    <div class="estrutura">
         <h3 class="relacao">RELAÇÃO DE CRIANÇAS</h3>
     </div>
-    <div id="listagem"></div>
+    <div class="estrutura" id="listagem"></div>
     <script src="criancas.js"></script>
 </body>
 </html>
